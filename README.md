@@ -5,11 +5,10 @@ This is a component to be installed on each cube-service defined on the system. 
 The provided features include:
 
 1. Exposes a local HTTP server at http://localhost:8080/
-2. All services communicate through this client
-3. Your apps don't have to be converted to event-based paradigms, saving huge amount of refactoring. This client acts as an adapter between your REST-expecting applications and the Message-queue based router, getting benefits of both paradigms.
-4. It communicates with the Cube Router, your apps don't have to know where is the Router, Gateway or any other system components or micro-services.
-5. Installs Redis to cache outbound calls.
-6. Listens to cube-wide system events to purge the cache intelligently.
+2. All outbound-communicate goes through this client
+3. It communicates with the Cube Router, your apps don't have to know where is the Router, Gateway or any other system components or micro-services.
+4. Installs Redis to cache outbound calls.
+5. Listens to cube-wide system events to purge the cache intelligently.
 
 The client is installed in each micro-service node:
 
