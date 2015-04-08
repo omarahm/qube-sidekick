@@ -4,11 +4,13 @@ This is a component to be installed on each cube-service defined on the system. 
 
 The provided features include:
 
+1. Subscribes for events(found in routes) then re-route AMQB messages into HTTP requests.
+1. All inbound-communicate goes through this client
 1. Exposes a local HTTP server at http://localhost:8080/
-2. All outbound-communicate goes through this client
-3. It communicates with the Cube Router, your apps don't have to know where is the Router, Gateway or any other system components or micro-services.
-4. Installs Redis to cache outbound calls.
-5. Listens to cube-wide system events to purge the cache intelligently.
+1. All outbound-communicate goes through this client
+1. It communicates with the Cube Router, your apps don't have to know where is the Router, Gateway or any other system components or micro-services.
+1. Installs Redis to cache outbound calls.
+1. Listens to cube-wide system events to purge the cache intelligently.
 
 The client is installed in each micro-service node:
 
