@@ -1,4 +1,4 @@
-# Cube - Sidekick component
+# Qube - Sidekick component
 
 This is a component to be installed on each cube-service defined on the system. It provides some common, but vital, functionality for each micro service in the system.
 
